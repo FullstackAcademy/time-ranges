@@ -1,17 +1,17 @@
 import { parser } from "./parser";
 import moment from "moment";
 
-type Time = {
+interface Time {
   hour: number,
   minute: number
 }
 
-type TimeRange = {
+interface TimeRange {
   start: Time,
   end: Time
 }
 
-type MomentRange = {
+interface MomentRange {
   start: moment.Moment,
   end: moment.Moment
 }

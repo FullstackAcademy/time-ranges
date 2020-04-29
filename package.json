@@ -5,7 +5,7 @@
   "main": "./index.ts",
   "scripts": {
     "test": "npm run build && node test.js",
-    "test:watch": "nodemon --watch index.ts --watch parser.ts --watch time-ranges.pegjs --exec \"npm run test\"",
+    "test:watch": "nodemon --watch tsconfig.json --watch index.ts --watch parser.ts --watch time-ranges.pegjs --exec \"npm run test\"",
     "check": "tsc --project tsconfig.json --watch",
     "build": "tsc --project tsconfig.json"
   },
@@ -14,6 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^13.13.4",
+    "@types/pegjs": "^0.10.1",
     "nodemon": "^2.0.3",
     "typescript": "^3.8.3"
   },
