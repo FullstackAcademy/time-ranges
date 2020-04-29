@@ -8,8 +8,7 @@
     "test": "npm run build && node dist/test.js",
     "test:watch": "nodemon --watch tsconfig.json --watch index.ts --watch parser.ts --watch time-ranges.pegjs --exec \"npm run test\"",
     "check": "tsc --project tsconfig.json --watch",
-    "build": "tsc --project tsconfig.json",
-    "release": "./script/release"
+    "build": "tsc --project tsconfig.json"
   },
   "keywords": [],
   "author": "",
