@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist/",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "noImplicitAny": true,
     "noImplicitReturns": true
   },
-  "paths": [
-    "./index.ts"
-  ]
+  "paths": ["./index.ts"]
 }

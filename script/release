@@ -1,0 +1,9 @@
+set -e
+npm run test
+git checkout -b release
+git add dist --force
+git commit -m "release $1"
+git tag "v-$1"
+git checkout -
+git branch -D release
+git push --tags
