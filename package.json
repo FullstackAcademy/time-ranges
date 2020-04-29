@@ -4,8 +4,8 @@
   "description": "",
   "main": "./index.ts",
   "scripts": {
-    "test": "node test.ts",
-    "test:watch": "nodemon test.ts --watch index.ts --watch parser.ts --watch time-ranges.pe.ts",
+    "test": "npm run build && node test.js",
+    "test:watch": "nodemon --watch index.ts --watch parser.ts --watch time-ranges.pegjs --exec \"npm run test\"",
     "check": "tsc --project tsconfig.json --watch",
     "build": "tsc --project tsconfig.json"
   },
