@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["./time-ranges.pegjs", "./dist/**/*"],
+  "files": ["time-ranges.pegjs", "dist/**/*"],
   "scripts": {
     "test": "npm run build && node dist/test.js",
     "test:watch": "nodemon --watch tsconfig.json --watch index.ts --watch parser.ts --watch time-ranges.pegjs --exec \"npm run test\"",
