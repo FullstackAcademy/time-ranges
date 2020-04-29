@@ -47,5 +47,3 @@ From: ${range.start.format("LLL")}
   To: ${range.end.format("LLL")}`);
   }
 }
-
-inspectTimeString('9:00am-10:00am, 12:00pm-5:30pm')
