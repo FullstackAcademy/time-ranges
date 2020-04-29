@@ -1,5 +1,7 @@
 # A library to parse time ranges
 
+![Tests Are Passing](https://github.com/FullstackAcademy/time-ranges/workflows/Run%20Tests%20For%20Pull%20Requests/badge.svg)
+
 The module `index.ts` exports two functions:
 
 ## `generateTimeRanges`
