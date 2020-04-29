@@ -1,3 +1,4 @@
 *.s[wno]p
 node_modules/
 .DS_Store
+*.js

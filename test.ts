@@ -1,5 +1,5 @@
-const parser = require('./parser').parser;
-const assert = require("assert");
+import { parser } from "./parser";
+import assert from "assert";
 
 const tests = {
   "parses single time ranges": () => {

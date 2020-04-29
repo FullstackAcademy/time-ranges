@@ -2,19 +2,22 @@
   "name": "bookable-time",
   "version": "1.0.0",
   "description": "",
-  "main": "./index.js",
+  "main": "./index.ts",
   "scripts": {
-    "test": "node test.js",
-    "test:watch": "nodemon test.js --watch index.js --watch parser.js --watch time-ranges.pegjs"
+    "test": "node test.ts",
+    "test:watch": "nodemon test.ts --watch index.ts --watch parser.ts --watch time-ranges.pe.ts",
+    "check": "tsc --project tsconfig.json --watch",
+    "build": "tsc --project tsconfig.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "@types/node": "^13.13.4",
+    "nodemon": "^2.0.3",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "luxon": "^1.23.0",
     "moment": "^2.24.0",
     "pegjs": "^0.10.0"
   }

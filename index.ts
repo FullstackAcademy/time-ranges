@@ -1,9 +1,26 @@
-const parser = require("./parser").parser;
-const moment = require("moment");
+import { parser } from "./parser";
+import moment from "moment";
 
+type Time = {
+  hour: number,
+  minute: number
+}
 
-function generateTimeRanges(timeString, forMoment = moment().startOf("day")) {
-  return parser.parse(timeString).map(range => {
+type TimeRange = {
+  start: Time,
+  end: Time
+}
+
+type MomentRange = {
+  start: moment.Moment,
+  end: moment.Moment
+}
+
+export function generateTimeRanges(
+  timeString : string,
+  forMoment : moment.Moment = moment().startOf("day")
+): [MomentRange] {
+  return parser.parse(timeString).map((range : TimeRange) => {
     const start = forMoment.clone();
     start.set("hour", range.start.hour);
     start.set("minute", range.start.minute);
@@ -19,7 +36,7 @@ function generateTimeRanges(timeString, forMoment = moment().startOf("day")) {
   });
 }
 
-function inspectTimeString(timeString) {
+export function inspectTimeString(timeString:string) {
   console.log("========================");
   console.log(`timeString: \n${timeString}`);
   console.log();
@@ -31,7 +48,3 @@ From: ${range.start.format("LLL")}
     `);
   }
 }
-
-module.exports.generateTimeRanges = generateTimeRanges;
-module.exports.inspectTimeString = inspectTimeString;
-
