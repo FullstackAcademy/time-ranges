@@ -1,0 +1,29 @@
+name: Run Tests For Pull Requests
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  test:
+    # Job name is Greeting
+    name: NPM Test
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+
+    steps:
+    # Check out repository
+    - name: Clone Source Code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js Version 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Install NPM Modules
+      run: npm install
+
+    - name: Tests
+      run: npm test
+
