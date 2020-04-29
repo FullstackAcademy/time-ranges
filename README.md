@@ -3,7 +3,7 @@
 ## Installing
 
 ```sh
-npm install github:FullstackAcademy/time-ranges#v-1.0.0 (or the version you want)
+npm install github:FullstackAcademy/time-ranges#v-1.0.7 (or the version you want)
 ```
 
 ![Tests Are Passing](https://github.com/FullstackAcademy/time-ranges/workflows/Run%20Tests%20For%20Pull%20Requests/badge.svg)
