@@ -55,7 +55,7 @@ Once you wish to cut a new release from the `master` branch follow these steps:
 
 1. Determine the next appropriate version tag.
 2. Checkout `master` locally.
-3. Run `script/release v-x.y.z`
+3. Run `script/release v-x.y.z` (replacing x.y.z with version numbers)
 
 The release script will build js sources and type definitions and push them up to github as a tag.
 
