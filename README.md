@@ -46,3 +46,17 @@ From: April 29, 2020 9:00 AM
 From: April 29, 2020 12:00 PM
   To: April 29, 2020 5:30 PM
 ```
+
+## Releasing /
+
+`time-ranges` is currently released through git tags.
+
+Once you wish to cut a new release from the `master` branch follow these steps:
+
+1. Determine the next appropriate version tag.
+2. Checkout `master` locally.
+3. Run `script/release v-x.y.z`
+
+The release script will build js sources and type definitions and push them up to github as a tag.
+
+Then `npm install github:FullstackAcademy/time-ranges#v-x.y.z
