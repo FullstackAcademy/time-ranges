@@ -19,7 +19,7 @@ interface MomentRange {
 export function generateTimeRanges(
   timeString : string,
   forMoment : moment.Moment = moment()
-): [MomentRange] {
+): MomentRange[] {
   forMoment = forMoment.startOf('day');
   return parser.parse(timeString).map((range : TimeRange) => {
     const start = forMoment.clone();
